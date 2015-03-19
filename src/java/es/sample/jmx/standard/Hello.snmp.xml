@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snmpAdaptor4j-mapping
+	xmlns="http://www.sf.net/snmpAdaptor4j/mapping/1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sf.net/snmpAdaptor4j/mapping/1.1 
+	                    http://snmpAdaptor4j.sourceforge.net/xsd/snmpAdaptor4j-mapping-1.1.xsd" >
+
+  <mbeans>
+    <mbean name="es.sample.jmx:type=HelloMBean" oid="1.1"/>
+  </mbeans>
+
+  <attributes>
+    <attribute name="message" type="octetString" node="1" writable="true"/>
+    <attribute name="hellos" type="unsigned32" node="2" writable="false"/>
+    <attribute name="worldHellos" type="unsigned32" node="3" writable="false"/>
+    <attribute name="namedHellos" type="unsigned32" node="4" writable="false"/>
+  </attributes>
+
+</snmpAdaptor4j-mapping>
